@@ -1,0 +1,45 @@
+{
+  "name": "studypacks-ai-assistant",
+  "version": "1.0.0",
+  "description": "A comprehensive study app with AI assistant for O/L and university students",
+  "main": "public/electron.js",
+  "homepage": "./",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.0",
+    "axios": "^1.4.0",
+    "zustand": "^4.3.8",
+    "lucide-react": "^0.263.1",
+    "framer-motion": "^10.12.0",
+    "react-markdown": "^8.0.7",
+    "firebase": "^9.22.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0",
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.24",
+    "autoprefixer": "^10.4.14",
+    "electron": "^25.0.0",
+    "electron-builder": "^24.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-build": "npm run build && electron-builder"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  }
+}
